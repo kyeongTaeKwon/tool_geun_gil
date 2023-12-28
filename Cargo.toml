@@ -1,0 +1,13 @@
+[workspace]
+members = ["server","find_bus_stop"]
+default-members = ["server","find_bus_stop"]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+resolver = "2"
+
+[workspace.package]
+publish = false
+edition = "2021"
+rust-version = "1.72"
+
+[workspace.dependencies]
+find_bus_stop = {path = "find_bus_stop"}
